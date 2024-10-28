@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container" id="profile-section">
+        <img src="/asset/PP.png" alt="Profile" class="profile-img">
+        <div class="profile-details">
+            <h2 id="name">Ricky Andrico</h2>
+            <p id="role">Full stack</p>
+            <p><strong>Availability:</strong> <span id="availability">Full Time</span></p>
+            <p><strong>Usia:</strong> <span id="age">20</span></p>
+            <p><strong>Lokasi:</strong> <span id="location">Jambi</span></p>
+            <p><strong>Pengalaman:</strong> <span id="experience">2</span></p>
+            <p><strong>Email:</strong> <span id="email">rickyandrico***@gmail.com</span></p>
+            <button id="editButton" onclick="showForm()">Edit</button>
+        </div>
+    </div>
+
+    <div class="form-container" id="form-section" style="display: none;">
+        <form id="editForm">
+            <label for="nameInput">Nama:</label>
+            <input type="text" id="nameInput" value="Nama Anda">
+
+            <label for="roleInput">Role:</label>
+            <input type="text" id="roleInput" value="Front End Designer">
+
+            <label for="availabilityInput">Availability:</label>
+            <input type="text" id="availabilityInput" value="Full Time">
+
+            <label for="ageInput">Usia:</label>
+            <input type="number" id="ageInput" value="19">
+
+            <label for="locationInput">Lokasi:</label>
+            <input type="text" id="locationInput" value="Jakarta">
+
+            <label for="experienceInput">Years Experience:</label>
+            <input type="number" id="experienceInput" value="2">
+
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" value="email@gmail.com">
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
